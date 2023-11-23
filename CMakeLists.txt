@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.2)
+project(main)
+include_directories(Lib)
+set(SOURSE_EXE main.cpp)
+add_executable(main ${SOURSE_EXE})
+add_subdirectory(Lib)
+target_link_libraries(main Leaver.DLL)
